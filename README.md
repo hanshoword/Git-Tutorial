@@ -72,3 +72,9 @@ files = zf.ZipFile("find-a-car-park.zip", 'r')
 files.extractall('data')
 files.close()
 ```
+### Github upload image [HTML]
+
+```
+<img src="https://~.png"  width="90%"></img>
+Issues -> new Issue -> 이미지 드래그 후 html주소 
+```
