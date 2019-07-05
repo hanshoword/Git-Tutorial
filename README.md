@@ -42,3 +42,33 @@ int main()
 
 **강조선** ~~취소선~~ 
 
+### python read frame code
+```c
+import cv2
+
+cap = cv2.VideoCapture('video.mp4')
+
+while True:
+  # 프레임을 읽습니다.
+  ret, frame = cap.read()
+  if ret == True:
+    cv2.imshow('FaceDetection', frame)
+
+    if cv2.waitKey(30) & 0xFF == ord('q'):
+        break
+  else:
+    break
+
+cap.release()
+cv2.destroyAllWindows()
+```
+
+### jupyter notebook upload folder
+
+```c
+import zipfile as zf
+
+files = zf.ZipFile("find-a-car-park.zip", 'r')
+files.extractall('data')
+files.close()
+```
