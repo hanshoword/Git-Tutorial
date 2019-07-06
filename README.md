@@ -78,3 +78,24 @@ files.close()
 <img src="https://~.png"  width="90%"></img>
 Issues -> new Issue -> 이미지 드래그 후 html주소 
 ```
+
+### coco download
+
+```c
+git clone https://github.com/cocodataset/cocoapi.git
+
+setup.py파일 실행 
+        extra_compile_args=['-std=c99'], 로 변경
+
+cmd
+cd를 이용해서 PythonAPI로 이동.
+
+python setup.py install로 설치
+```
+
+### ipython 실행법
+
+```c
+cd로 해당경로 이동후
+ipython notebook
+```
